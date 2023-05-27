@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="room-names">
+                <span class="rooms" onclick="currentSlide(1)">ROSTOV-ON-DON, ADMIRAL</span>
+                <span class="rooms" onclick="currentSlide(2)">SOCHI THIEVES</span>
+                <span class="rooms" onclick="currentSlide(3)">ROSTOV-ON-DON PATRIOTIC</span>
+            </div>
+            <div class="content">
+                <div class="content-discription">
+                    <h1 class="content-title">COMPLETED<br>PROJECTS</h1>
+                    <p class="content-discription_text">Only a small part of the work performed by our company is presented<br>
+                       on the site.For 14 years on in the construction<br>
+                       maarket we have made happy more than 1000 families</p>
+                       
+                       <div>
+                        <div class="discription-block">
+                            <div>
+                                <span class="discr-unit">City:</span>
+                                <p class="discr-text text1">
+                                    <div class="discr-text city-text">Rostov-on-Don<br><br>LCD Admiral</div>
+                                    <div class="discr-text city-text">Sochi<br><br>Thieves</div>
+                                    <div class="discr-text city-text">Rostov-on-Don<br><br>Patriotic</div>
+                                </p>
+                            </div>
+                            <div>
+                                <div class="discr-unit">Apartment Area:</div>
+                                <p class="discr-text text2">
+                                    <div class="discr-text area-text">81 m2</div>
+                                    <div class="discr-text area-text">105 m2</div>
+                                    <div class="discr-text area-text">93 m2</div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="discription-block">
+                            <div>
+                                <span class="discr-unit">Repair time:</span>
+                                <p class="discr-text text3">
+                                    <div class="discr-text time-text">3.5 months</div>
+                                    <div class="discr-text time-text">4 months</div>
+                                    <div class="discr-text time-text">3 months</div>
+                                </p>
+                            </div>
+                            <div class="divv">
+                                <span class="discr-unit">Repair cost:</span>
+                                <p class="discr-text discr-text_right text4">Upon request</p>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                        <button class="button-left buttons-arrows" onclick="previousSlide()">&#10229;</button>
+                        <button class="button-right buttons-arrows" onclick="nextSlide()">&#10230;</button>
+                        </div>
+                       </div>
+                       <div class="dots">
+                        <div class="button-dot" onclick="currentSlide(1)">&#8226;</div>
+                        <div class="button-dot" onclick="currentSlide(2)">&#8226;</div>
+                        <div class="button-dot" onclick="currentSlide(3)", >&#8226;</div>
+                       </div>
+                </div>
+                <div class="content-picture" id="first-image">
+                    <div class="slider">
+                    <div class="image"><img src="images/image1.png" alt="Admiral room"></div>
+                    <div class="image"><img src="images/image2.png" alt="Thieves room"></div>
+                    <div class="image"><img src="images/image3.png" alt="Patriotic room"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
